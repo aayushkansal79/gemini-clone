@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './sidebar.css'
 import {assets} from '../../assets/assets'
 
 const sidebar = () => {
+
+    const [extended, setextended] = useState(false)
+
   return (
     <div className='sidebar'>
         <div className="top">
-            <img src={assets.menu_icon} alt="" />
+            <img onClick={()=>setextended(prev=>!prev)} className='menu' src={assets.menu_icon} alt="" />
             <div className="new-chat">
                 <img src={assets.plus_icon} alt="" />
-                <p>New Chat</p>
+                {extended?<p>New Chat</p>:null}
             </div>
+            {extended?
             <div className="recent">
                 <p className="recent-title">Recent</p>
                 <div className="recent-entry">
@@ -18,9 +22,21 @@ const sidebar = () => {
                     <p>What is computer ...</p>
                 </div>
             </div>
+            :null}
         </div>
         <div className="bottom">
-
+            <div className="bottom-item recent-entry">
+                <img src={assets.question_icon} alt="" />
+                {extended?<p>Help</p>:null}
+            </div>
+            <div className="bottom-item recent-entry">
+                <img src={assets.history_icon} alt="" />
+                {extended?<p>Activity</p>:null}
+            </div>
+            <div className="bottom-item recent-entry">
+                <img src={assets.setting_icon} alt="" />
+                {extended?<p>Settings</p>:null}
+            </div>
         </div>
     </div>
   )
