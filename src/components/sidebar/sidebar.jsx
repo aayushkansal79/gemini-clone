@@ -19,7 +19,7 @@ const sidebar = () => {
                 <p className="recent-title">Recent</p>
                 <div className="recent-entry">
                     <img src={assets.message_icon} alt="" />
-                    <p>What is computer ...</p>
+                    <p>What is React..</p>
                 </div>
             </div>
             :null}
