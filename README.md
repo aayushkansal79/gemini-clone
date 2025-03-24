@@ -11,7 +11,7 @@ A **Gemini Clone** built using **React.js**, designed to replicate the functiona
 
 ## 🛠️ Tech Stack  
 - **Frontend:** React.js, CSS, HTML
-- **Backend (optional):** Node.js  
+- **Backend:** Node.js  
 - **AI Integration:** Gemini API  
 
 ## 💡 Contributing
