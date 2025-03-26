@@ -10,31 +10,31 @@ const Main = () => {
   return (
     <div className='main'>
       <div className='nav'>
-        <p>Sasta Gemini</p>
+        <p>Gemini</p>
         <img src={assets.user_icon2} alt="" />
       </div>
       <div className="main-container">
         {!showResult?
           <>
             <div className="greet">
-              <p><span>Haan Bhai, Chintu</span></p>
-              <p>Aaj kya dikkat hai tujhe?</p>
+              <p><span>Hey there..</span></p>
+              <p>How can I help you today?</p>
             </div>
             <div className="cards">
               <div className="card">
-                  <p>Or mummy kesi hai ?</p>
+                  <p>Write a short sci-fi story about a robot that gains emotions.</p>
                   <img src={assets.compass_icon} alt="" />
               </div>
               <div className="card">
-                  <p>Would you rather sleep with..!?</p>
+                  <p>Generate a creative workout plan for someone who loves gaming.</p>
                   <img src={assets.bulb_icon} alt="" />
               </div>
               <div className="card">
-                  <p>How to crack IIT ?</p>
+                  <p>Suggest five unique business ideas that don’t exist yet.</p>
                   <img src={assets.message_icon} alt="" />
               </div>
               <div className="card">
-                  <p>What is the currency of South Africa ?</p>
+                  <p>Describe a futuristic city in the year 2150 with advanced AI.</p>
                   <img src={assets.code_icon} alt="" />
               </div>
             </div>
@@ -62,7 +62,7 @@ const Main = () => {
         
         <div className="main-bottom">
           <div className="search-box">
-            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Puchh, batata hu ..' />
+            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
             <div>
               <img src={assets.gallery_icon} alt="" srcset="" />
               <img src={assets.mic_icon} alt="" srcset="" />
@@ -70,7 +70,7 @@ const Main = () => {
             </div>
           </div>
           <p className='bottom-info'>
-            Pehle log khet me kaam kiya karte the, fir Gemini chalane vale aagye
+            Gemini can make mistakes. Check important info.
           </p>
         </div>
       </div>
