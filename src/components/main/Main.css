@@ -5,17 +5,40 @@
     position: relative;
 }
 
+.light{
+    background-color: #f6f7f8;
+    color: #585858;
+}
+.dark{
+    background-color: #1e1e1e;
+    color: #c4c7c5;
+}
+
 .main .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 22px;
     padding: 20px;
-    color: #585858;
 }
+
+.nav-left{
+    display: flex;
+    gap : 20px;
+}
+
 .main .nav img{
     border-radius: 50%;
     width: 50px;
+}
+
+.nav-left img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.theme-img{
+    animation:fadein 0.5s ; 
 }
 
 .main-container{
@@ -44,28 +67,50 @@
 .main .card{
     height: 150px;
     padding: 15px;
-    background-color: #f0f4f9;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
 }
+
+.card-light{
+    background-color: #e4e8ec;
+}
+
+.card-dark{
+    background-color: #303030;
+}
+
 .main .card:hover{
-    background-color: #dfe4e8;
+    background-color: #c8d1d8;
 }
 
 .main .card img{
     width: 35px;
     padding: 5px;
     position: absolute;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 20px;
     bottom: 10px;
     right: 10px;
 }
 
+.card-img-light{
+    background-color: white;
+}
+.card-img-dark{
+    background-color: rgb(146, 146, 146);
+}
+
 .main .card p{
-    color: #585858;
     font-size: 18px;
+}
+
+.card-p-light{
+    color: #585858;
+}
+
+.card-p-dark{
+    color: #c4c7c5;
 }
 
 .main-bottom{
@@ -82,9 +127,16 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #f0f4f9;
     padding: 10px 20px;
     border-radius: 50px;
+}
+
+.search-box-light{
+    background-color: #e4e8ec;
+}
+
+.search-box-dark{
+    background-color: #303030;
 }
 
 .search-box img{
@@ -99,6 +151,17 @@
     outline: none;
     padding: 8px;
     font-size: 18px;
+}
+
+.input-light{
+    color: black;
+}
+
+.input-dark{
+    color: white;
+}
+.input-dark::placeholder{
+    color: rgb(173, 173, 173);
 }
 
 .search-box div{

@@ -6,14 +6,14 @@ import { Context } from '../../context/context'
 const sidebar = () => {
 
     const [extended, setextended] = useState(false)
-    const { onSent, prevPrompts, setRecentPrompt,newchat } = useContext(Context);
+    const {onSent, prevPrompts, setRecentPrompt,newchat,isActive,setIsActive} = useContext(Context);
 
     const loadPrompt = async (prompt)=>{
         setRecentPrompt(prompt)
         await onSent(prompt)
     }
     return (
-        <div className='sidebar'>
+        <div className={isActive ? "sidebar sidebar-dark" : "sidebar sidebar-light"}>
             <div className="top">
                 <img onClick={() => setextended(prev => !prev)} className='menu' src={assets.menu_icon} alt="" />
                 <div  onClick={()=> newchat()} className="new-chat">

@@ -3,8 +3,16 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f0f4f9;
     padding: 25px 15px;
+}
+
+.sidebar-light{
+    background-color: #f0f4f9;
+}
+
+.sidebar-dark{
+    background-color: #303030;
+    color: #c4c7c5;
 }
 
 .sidebar img{
