@@ -7,8 +7,6 @@ import bulb_icon from './bulb_icon.png'
 import compass_icon from './compass_icon.png'
 import gallery_icon from './gallery_icon.png'
 import mic_icon from './mic_icon.png'
-import user_icon from './user_icon.png'
-import youtube_icon from './youtube_icon.png'
 import message_icon from './message_icon.png'
 import code_icon from './code_icon.png'
 import send_icon from './send_icon.png'
@@ -16,6 +14,7 @@ import gemini_icon from './gemini_icon.png'
 import user_icon2 from './user_icon2.jpg'
 import light_mode from './light_mode.png'
 import dark_mode from './dark_mode.png'
+import message_icon2 from './message_icon2.png'
 
 export const assets = {
     history_icon,
@@ -27,13 +26,12 @@ export const assets = {
     compass_icon,
     gallery_icon,
     mic_icon,
-    user_icon,
-    youtube_icon,
     message_icon,
     code_icon,
     send_icon,
     gemini_icon,
     user_icon2,
     light_mode,
-    dark_mode
+    dark_mode,
+    message_icon2
 }
