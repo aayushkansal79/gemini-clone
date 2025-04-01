@@ -6,6 +6,7 @@ A **Gemini Clone** built using **React.js**, designed to replicate the functiona
 - **AI-powered chatbot**  
 - **User-friendly UI**  
 - **Real-time response generation**  
+- **Dark & light mode support**
 - **API integration with AI models**  
 
 ## 🛠️ Tech Stack  
